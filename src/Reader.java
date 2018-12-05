@@ -1,4 +1,4 @@
 
 public interface Reader {
-	public void reader();
+	public Object reader(String _name);
 }

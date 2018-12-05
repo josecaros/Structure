@@ -1,5 +1,5 @@
 
-public abstract class AbstractList<T> implements AbstractLinkedStructures<T>{
+public abstract class AbstractList<T> implements AbstractLinkedStructures<T>, Descriptor{
 	Multinode root;
 	int size;
 	@Override

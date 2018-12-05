@@ -53,4 +53,10 @@ public class SList<T> extends AbstractList<T> {
 		this.size--;
 	}
 
+	@Override
+	public String descripcion() {
+		// TODO Auto-generated method stub
+		return "SList";
+	}
+
 }

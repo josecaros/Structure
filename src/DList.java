@@ -19,4 +19,10 @@ public class DList<T> extends AbstractList<T> {
 
 	}
 
+	@Override
+	public String descripcion() {
+		// TODO Auto-generated method stub
+		return "DList";
+	}
+
 }

@@ -1,4 +1,4 @@
 
 public interface Writer {
-	public void write();
+	public void write(String _name);
 }

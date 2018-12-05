@@ -7,7 +7,15 @@ public class Main {
 		lista.insert(2);
 		lista.insert(1);
 		
-		Printer print=new ListConsolePrinter(lista);
+		ListPrinter printer= new ListGraphVizPrinter(lista);
+		ListPrinter print=new ListConsolePrinter(lista);
 		print.print();
+		Writer guardar = new SerializableWriter(lista);
+		guardar.write("Lista1");
+		Reader leer = new SerializableReader();
+		AbstractList nuevo= (AbstractList) leer.reader("Lista1");
+		print.setList(nuevo);
+		print.print();
+		printer.print();
 	}
 }
